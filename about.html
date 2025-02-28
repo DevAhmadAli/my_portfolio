@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ahmad Ali</title>
+    <link rel="icon" type="image/png" href="assets/webslogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="faqs-about-skills.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="li-first-child"><a href="index.html">Ahmad Ali.</a></li>
+            <li class="li-a"><a href="index.html#hero">Home</a></li>
+            <li class="li-a"><a href="about.html">About</a></li>
+            <li class="li-a"><a href="skills.html">Skills</a></li>
+            <li class="li-a"><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="li-a"><a href="index.html#contact">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6C63FF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="about-page">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I'm a passionate front-end developer, skilled in building responsive and dynamic user interfaces. I specialize in crafting seamless user experiences using technologies like JavaScript and Tailwind CSS. With a focus on clean code and performance optimization, I bring designs to life and ensure that applications are both functional and visually appealing.
+            </p>
+            <div class="skills about-skills-card">
+                <a class="skills-ancher" href="skills.html">Skills</a>
+                <a href="#">
+                    <i class='bx bxl-html5'></i>
+                    <span class="skills-card">HTML 5</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-css3'></i>
+                    <span class="skills-card">CSS</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-tailwind-css'></i>
+                    <span class="skills-card">Tailwind CSS</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-javascript'></i>
+                    <span class="skills-card">JavaScript</span>
+                </a>
+            </div>
+            <p>
+                Driven by a passion for technology and creativity, I aim to deliver intuitive and engaging web experiences. My hobbies include exploring new frameworks, and constantly challenging myself to learn and grow.
+            </p>
+            <p>
+                I am a self-taught professional, not holding formal academic certifications, and am currently engaged in numerous projects. My experience spans developing various web solutions, including personal and client portfolio websites, blogging platforms, website clones, and e-commerce platforms. With a strong passion for innovation, I continuously explore new technologies to enhance my skills and build impactful digital solutions
+            </p>
+            <p class="about-quote">
+                “Programming isn't about what you know; it's about what you can figure out.” <br>- Chris Pine
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pages">
+            <a href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+        <p>&copy; 2025 Ahmad Ali. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

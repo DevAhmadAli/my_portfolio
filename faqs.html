@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Ahmad Ali</title>
+    <link rel="icon" type="image/png" href="assets/webslogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="faqs-about-skills.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="li-first-child"><a href="index.html">Ahmad Ali.</a></li>
+            <li class="li-a"><a href="index.html#hero">Home</a></li>
+            <li class="li-a"><a href="about.html">About</a></li>
+            <li class="li-a"><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="li-a"><a href="index.html#contact">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6C63FF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="faqs-page">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqs-container">
+            <div class="faq-card">
+                <h3>User: What services do you offer?</h3>
+                <p>We offer a wide range of services including web development, and UI/UX design to help your business grow online.</p>
+            </div>
+            <div class="faq-card">
+                <h3>User: How can I get a quote for my project?</h3>
+                <p>You can reach out through our contact form, and we'll get back to you with a tailored quote based on your project requirements.</p>
+            </div>
+            <div class="faq-card">
+                <h3>User: What is the estimated timeline for a project?</h3>
+                <p>The timeline varies depending on the project scope, but we work efficiently to meet deadlines and keep you updated throughout the process.</p>
+            </div>
+            <div class="faq-card">
+                <h3>User: Do you provide post-launch support?</h3>
+                <p>Yes, we offer post-launch support to ensure your website or application continues to perform smoothly. Our support includes updates, maintenance, and troubleshooting.</p>
+            </div>
+            <div class="faq-card">
+                <h3>User: How do I start a project with you?</h3>
+                <p>Simply fill out our contact form, and we'll schedule a consultation to discuss your project ideas and goals in more detail.</p>
+            </div>
+            <div class="faq-card">
+                <h3>User: Where can I find the contact form on your website?</h3>
+                <p>The contact form is available in the "Let's Work Together" section. Simply fill in the required information, and we'll connect with you as soon as possible. You can also connect with me on LinkedIn and Instagram.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pages">
+            <a href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="faqs.html">FAQs</a>
+            
+        </div>
+        <p>&copy; 2025 Ahmad Ali. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

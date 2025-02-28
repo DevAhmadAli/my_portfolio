@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Ali - Frontend Developer</title>
+    <link rel="icon" type="image/png" href="assets/webslogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faqs-about-skills.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="li-first-child"><a href="#">Ahmad Ali.</a></li>
+            <li class="li-a"><a href="#hero">Home</a></li>
+            <li class="li-a"><a href="about.html">About</a></li>
+            <li class="li-a"><a href="skills.html">Skills</a></li>
+            <li class="li-a"><a href="#portfolio">Portfolio</a></li>
+            <li class="li-a"><a href="#contact">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6C63FF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Front-End Developer</h1> 
+            <p class="hero-p-text">I specalize in crafting responsive and dynamic user interfaces with a stron focus on user experience. My skills include HTML, CSS, Tailwind CSS, and JavaScript.</p>
+            <div class="skills">
+                <a class="skills-ancher" href="skills.html">Skills</a>
+                <a href="#">
+                    <i class='bx bxl-html5'></i>
+                    <span class="skills-card">HTML 5</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-css3'></i>
+                    <span class="skills-card">CSS</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-tailwind-css'></i>
+                    <span class="skills-card">Tailwind CSS</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-javascript'></i>
+                    <span class="skills-card">JavaScript</span>
+                </a>
+            </div>
+            <button class="btn secondary" onclick="window.location.href='#portfolio'">View Portfolio</button>
+        </div>
+        <div class="hero-image">
+            <img src="assets/imgbg.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Featured Projects</h2>
+        <p>A collection of projects I've worked on, Showcasing my skills and creativity in building functional and visually appealing solutions</p>
+        <div class="portfolio-gallery">
+            <div class="project-card">
+                <img src="assets/comming soon.png" alt="Comming soon">
+                <h3>Comming Soon!</h3>
+                <p>Working on Multiple Projects. <br> Comming Soon!</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn secondary">GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/comming soon.png" alt="Comming soon">
+                <h3>Comming Soon!</h3>
+                <p>Working on Multiple Projects. <br> Comming Soon!</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn secondary">GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/comming soon.png" alt="Comming soon">
+                <h3>Comming Soon!</h3>
+                <p>Working on Multiple Projects. <br> Comming Soon!</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn secondary">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <!-- <h2>Contact Me</h2> -->
+        <div class="contact-container">
+            <form>
+                <h2>Contact Me</h2>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-media">
+                <a href="#">
+                    <i class='bx bxl-github'></i>
+                    <span class="social-card">GitHub</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-linkedin'></i>
+                    <span class="social-card">LinkedIn</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-facebook'></i>
+                    <span class="social-card">Facebook</span>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                    <span class="social-card">Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="pages">
+            <a href="index.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="faqs.html">FAQs</a>
+            
+        </div>
+        <p>&copy; 2025 Ahmad Ali. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
