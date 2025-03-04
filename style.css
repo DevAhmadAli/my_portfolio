@@ -83,8 +83,8 @@ nav .li-a:hover {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color:  #636381;
-    backdrop-filter: blur(10px);
+    background-color:  #6363811e;
+    backdrop-filter: blur(1px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -171,14 +171,12 @@ nav .li-a:hover {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    padding: 20px;
-    border-top: 2px solid #fff;
-    border-right: 1.2px solid #fff;
+    padding: 12px;
+    border-radius: 5px;
     background: rgba(30, 30, 45, 0.8);
     backdrop-filter: blur(10px);
-    border-top-right-radius: 40px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .skills .skills-ancher{
@@ -316,7 +314,7 @@ nav .li-a:hover {
 }
 
 .project-card p {
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: #FFFFFF;
     margin-bottom: 15px;
 }
@@ -337,37 +335,6 @@ nav .li-a:hover {
     padding: 10px;
     font-size: 0.9rem;
 }
-
-
-/* .portfolio h2 {
-    font-size: 2.2rem;
-}
-.portfolio-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.project-card {
-    background: #1E1E2D;
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
-}
-
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-} */
 
 .contact {
     background: linear-gradient(135deg, #0F0F1B, #1E1E2D);
@@ -535,6 +502,7 @@ nav .li-a:hover {
 footer {
     text-align: center;
     padding: 20px;
+    border-top: 0.1px solid white;
     background: #1E1E2D;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
